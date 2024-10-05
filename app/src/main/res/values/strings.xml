@@ -1,8 +1,27 @@
 <resources>
     <string name="app_name">Calkulator</string>
-    <string name="firstValue">pierwsza liczba</string>
-    <string name="druga_liczba">druga liczba</string>
     <string name="calculator">Calculator</string>
-    <string name="result">Wynik</string>
     <string name="todo">\"\"</string>
+    <string name="default_display">0</string>
+    <string name="reset">reset</string>
+    <string name="braces">braces</string>
+    <string name="percent">TODO</string>
+    <string name="center">TODO</string>
+    <string name="division">division\n</string>
+    <string name="seven">seven</string>
+    <string name="eight">eight</string>
+    <string name="nine">nine</string>
+    <string name="multiplication">multiplication\n</string>
+    <string name="four">four\n</string>
+    <string name="one">one\n</string>
+    <string name="minus">minus\t\t\t\t</string>
+    <string name="six">six</string>
+    <string name="five">five</string>
+    <string name="two">two</string>
+    <string name="three">three</string>
+    <string name="plus">plus</string>
+    <string name="zero">zero</string>
+    <string name="comma">comma</string>
+    <string name="modulo">modulo</string>
+    <string name="result">result</string>
 </resources>

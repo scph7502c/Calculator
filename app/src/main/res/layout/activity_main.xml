@@ -6,96 +6,202 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/zielony"
-        android:gravity="center"
-        android:text="@string/calculator"
-        android:textSize="@dimen/header_size" />
-
     <EditText
-        android:id="@+id/firstNumber"
+        android:id="@+id/display"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="220dp"
         android:autofillHints=""
-        android:hint="@string/firstValue"
-        android:imeOptions="actionNext"
-        android:inputType="number" />
+        android:layout_gravity="bottom"
+        android:gravity="bottom|start"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="none"
+        android:text="@string/default_display"
+        android:textSize="50sp"
+        tools:ignore="LabelFor" />
 
-    <EditText
-        android:id="@+id/secondNumber"
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="@string/druga_liczba"
-        android:imeOptions="actionNext"
-        android:inputType="number" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:rowOrderPreserved="true"
+        android:columnOrderPreserved="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
+        <!-- First row -->
         <ImageButton
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/sum" />
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/reset"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/braces"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/braces"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/percent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/percent"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/division"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/division"
+            android:scaleType="fitCenter"/>
 
+        <!-- Second row -->
+        <ImageButton
+            android:id="@+id/seven"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/seven"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/eight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/eight"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/nine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/nine"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/multiplication"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/multiplication"
+            android:scaleType="fitCenter"/>
+
+        <!-- Third row -->
+        <ImageButton
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/four"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/five"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/six"
+            android:scaleType="fitCenter"/>
         <ImageButton
             android:id="@+id/minus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/minus" />
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/minus"
+            android:scaleType="fitCenter"/>
 
+        <!-- Fourth row -->
         <ImageButton
-            android:id="@+id/multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/multiplication" />
-
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/one"
+            android:scaleType="fitCenter"/>
         <ImageButton
-            android:id="@+id/substract"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/division" />
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/two"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/three"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/plus"
+            android:scaleType="fitCenter"/>
+        <!-- Fifth row -->
+        <ImageButton
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/zero"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/comma"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/comma"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/modulo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/modulo"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/result"
+            android:scaleType="fitCenter"/>
 
-    </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/equal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/todo"
-        android:src="@drawable/equal" />
-
-
-    <TextView
-        android:id="@+id/displayResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/res_margin"
-        android:gravity="center"
-        android:text="@string/result" />
-
+    </GridLayout>
 
 </LinearLayout>
