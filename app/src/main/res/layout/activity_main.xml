@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -10,11 +11,12 @@
         android:id="@+id/display"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:autofillHints=""
         android:layout_gravity="bottom"
-        android:gravity="bottom|start"
+        android:autofillHints=""
+        android:background="#15FFF6"
         android:clickable="false"
         android:focusable="false"
+        android:gravity="bottom|start"
         android:inputType="none"
         android:text="@string/default_display"
         android:textSize="50sp"
@@ -23,14 +25,14 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:rowCount="5"
-        android:columnCount="4"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:rowOrderPreserved="true"
-        android:columnOrderPreserved="true">
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:columnOrderPreserved="true"
+        android:rowCount="5"
+        android:rowOrderPreserved="true">
 
         <!-- First row -->
         <ImageButton
@@ -40,7 +42,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/reset"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/braces"
             android:layout_width="0dp"
@@ -48,7 +51,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/braces"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/percent"
             android:layout_width="0dp"
@@ -56,7 +60,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/percent"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/division"
             android:layout_width="0dp"
@@ -64,7 +69,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/division"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
 
         <!-- Second row -->
         <ImageButton
@@ -74,7 +79,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/seven"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/eight"
             android:layout_width="0dp"
@@ -82,7 +88,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/eight"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/nine"
             android:layout_width="0dp"
@@ -90,7 +97,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/nine"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/multiplication"
             android:layout_width="0dp"
@@ -98,7 +106,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/multiplication"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
 
         <!-- Third row -->
         <ImageButton
@@ -108,7 +116,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/four"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/five"
             android:layout_width="0dp"
@@ -116,7 +125,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/five"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/six"
             android:layout_width="0dp"
@@ -124,7 +134,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/six"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/minus"
             android:layout_width="0dp"
@@ -132,7 +143,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/minus"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
 
         <!-- Fourth row -->
         <ImageButton
@@ -142,7 +153,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/one"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/two"
             android:layout_width="0dp"
@@ -150,7 +162,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/two"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/three"
             android:layout_width="0dp"
@@ -158,7 +171,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/three"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/plus"
             android:layout_width="0dp"
@@ -166,7 +180,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/plus"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
         <!-- Fifth row -->
         <ImageButton
             android:id="@+id/zero"
@@ -175,7 +189,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/zero"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/comma"
             android:layout_width="0dp"
@@ -183,7 +198,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/comma"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/modulo"
             android:layout_width="0dp"
@@ -191,7 +207,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/modulo"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
+
         <ImageButton
             android:id="@+id/result"
             android:layout_width="0dp"
@@ -199,7 +216,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:contentDescription="@string/result"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter" />
 
 
     </GridLayout>
