@@ -13,7 +13,7 @@
         android:layout_height="220dp"
         android:layout_gravity="bottom"
         android:autofillHints=""
-        android:background="#15FFF6"
+        android:background="#A9FDEB"
         android:clickable="false"
         android:focusable="false"
         android:gravity="bottom|start"
